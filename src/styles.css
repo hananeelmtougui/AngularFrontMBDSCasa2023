@@ -1,1 +1,8 @@
 /* CSS GLOBALE */
+html, body{
+    height: 100%;
+}
+body{
+    margin-left: 60px;
+    font-family: Roboto,"Helvetica Neue", sans-serif;
+}

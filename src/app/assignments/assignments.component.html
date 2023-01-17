@@ -1,0 +1,13 @@
+<button mat-raised-button color="warm"  >Click me</button>
+<div *ngFor="let assignment of assignments"
+       
+>
+    <p appRendu *ngIf="assignment.rendu; else nonsoumis">
+       Devoir initulé {{assignment.nom}},  rendu le {{assignment.dateDeRendu}}
+    </p>
+    <ng-template #nonsoumis>
+      <p>{{assignment.nom}} non rendu, à rendre le {{assignment.dateDeRendu}</p>
+    </ng-template>
+    
+ </div>
+ 
